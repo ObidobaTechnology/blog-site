@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* innerwidth style */
+
+.innerwidth {
+    margin: 0 10px;
+}
+
+/* innerwidth style ends */
+
+
+
+/* navigation styling starts */
+
+
+
+.navbar {
+    background: #0b1135;
+    color: #ece5e2;
+
+}
+
+.navbar .innerwidth ul {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .2s;
+    height: 50px;
+}
+
+.navbar .listItem li:hover {
+    color: #ece5e2;
+
+}
+.listItem .fa-bars{
+    display: none;
+}
+
+/* navigation Bar style ends */
+
+
+
+/* Home styling starts */
+
+
+.homepage {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.container .innerwidth {
+    background: #ccc;
+}
+
+/* Main-container Styling */
+
+.main-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coverArt {
+    flex-basis: 45%;
+    align-items: center;
+    justify-content: center;
+}
+
+.coverArt img {
+    width: 100%;
+}
+
+.text {
+    margin: 0 5%;
+    width: 600px;
+}
+
+.heading {
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: #ece5e2;
+}
+
+.p {
+    text-align: justify;
+    line-height: 39px;
+    flex-wrap: wrap;
+}
+
+.audio {
+    margin-top: 50px;
+}
+
+.downloadbtn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding: 0 5%;
+}
+
+.dlbtn button {
+    background: #0b1135;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #ece5e2;
+
+}
+
+/* Main-container styling Ends */
+
+
+
+/* side-container styling starts */
+
+.side-container {
+    flex-basis: 39%;
+    align-self: flex-start;
+    margin: 0 10%;
+
+}
+
+.fl-t {
+    background: #0b1135;
+    padding: 10px;
+    color: #ece5e2;
+    margin-bottom: 20px;
+}
+
+.social-platform {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.social-platform a {
+    text-decoration: none;
+    color: #ece5e2;
+    background: #0b1135;
+    margin: 5px;
+    padding: 10px;
+}
+
+.newsletter {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.newletter-headtitle {
+    background: #0b1135;
+    color: #ece5e2;
+    padding: 10px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+
+.newsletter form {
+    /* border:2px solid #0b1135; */
+    align-items: center;
+    padding: 4px;
+}
+
+.sub-newsletter_input {
+    outline: none;
+    color: #ece5e2;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.submit {
+    width: 70px;
+    padding: 5px;
+}
+
+
+
+
+.intrend {
+    display: flex;
+
+}
+
+.intrend a {
+    text-decoration: none;
+    color: #ece5e2;
+    padding: 3px;
+}
+
+.intrend img {
+    width: 40px;
+}
+
+/* side-container styling Ends  */
+
+
+
+/* Home styling ends */
+
+
+
+
+
+/* media screeen */
+
+
+@media screen and (max-width:999px) {
+    .navbar .listItem li{
+        display: none;
+    }
+    .listItem .fa-bars{
+        display: block;
+        font-size: 30px;
+    }
+    .main-container {
+        display: block;
+    }
+
+    .innerwidth {
+        margin: 0 20px;
+    }
+    .text .p{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .coverArt img{
+        width: 650px;
+        height: auto;
+        padding: 0 7%;
+    }
+
+    .p{
+        
+        width: 650px;
+        padding: 0 7%;
+    }
+    .heading{
+        padding: 0 9%;
+    }
+
+    
+}
+
+
+
+
+
+@media screen and(max-width:500px) 
+{
+    /* .text {
+        position: absolute;
+        width: 100px;
+    } */
+    .coverArt img{
+        width: 300px;
+        padding: 0 1%;
+    }
+    .heading{
+        font-size: 22px;
+        text-align: center;
+    }
+    .p{
+        font-size: 14x;
+        text-align: justify;
+    }
+    .socialIcons{
+        padding: 0 20%;
+        margin: 0 10px 10px;
+        font-weight: 600;
+    }
+    .intrend-img{
+        width: 10px;
+        margin-right:80px ;
+    }
+    
+}
+
+
+@media screen and  (max-width:393px) {
+    .coverArt img{
+        width: 250px;
+        padding: 0 7%;
+    }
+    .p{
+        
+        font-size:20px ;
+        padding:0 3px ;
+    }
+
+    .heading{
+        width: 250px;
+        margin-bottom: 10px;
+
+    }
+    
+}
+@media screen and (max-width:390px) {
+    .p{width: 5%;}
+    
+}
+
+
+/* media screeen */
